@@ -8,7 +8,7 @@
     "start": "node server.js",
     "dev": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js --content-base public/",
     "prod": "NODE_ENV=production node server.js",
-    "postintall": "run build",
+    "postintall": "npm run build",
     "build": "webpack --config ./webpack.config.js --progress --colors",
     "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
     "test:watch": "npm run test -- --watch"
