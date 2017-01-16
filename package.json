@@ -5,9 +5,10 @@
   "main": "index.js",
   "repository": "",
   "scripts": {
-    "dev": "node server.js",
-    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js --content-base public/",
+    "prod": "node server.js",
+    "dev": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js --content-base public/",
     "prod": "NODE_ENV=production node server.js",
+    "postintall": "webpack -p",
     "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
     "test:watch": "npm run test -- --watch"
   },
