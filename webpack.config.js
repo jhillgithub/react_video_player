@@ -1,11 +1,12 @@
 var webpack = require('webpack');
+var path = require('path');
 
 module.exports = {
   entry: [
     './src/index.jsx'
   ],
   output: {
-    path: __dirname,
+    path: path.resolve(__dirname, "public",
     publicPath: '/public/',
     filename: 'bundle.js'
   },
@@ -30,7 +31,7 @@ module.exports = {
   },
   devServer: {
     historyApiFallback: true,
-    contentBase: './'
+    contentBase: './public/'
   },
   devtool: "inline-source-map"
 };
