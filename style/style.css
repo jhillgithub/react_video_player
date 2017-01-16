@@ -25,3 +25,7 @@
 .list-group-item:hover {
   background-color: #eee;
 }
+
+.media-heading {
+  padding-left: 10px;
+}
